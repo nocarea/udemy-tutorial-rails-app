@@ -1,0 +1,18 @@
+h1 Articles Index
+table
+    thead
+        tr
+            th Title
+            th Actions
+    tbody
+        - @articles.each do |article|
+            tr.article
+                td
+                    a href=article_path(article)
+                        = article.title
+                td
+                    a href=edit_article_path(article)
+                        | Edit
+                td
+                    a href=article_path(article) data-method="delete"
+                        | Delete
