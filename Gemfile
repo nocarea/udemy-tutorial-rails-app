@@ -47,6 +47,7 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 # gem "sassc-rails"
 gem 'slim'
 gem 'devise'
+gem 'pry-byebug'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

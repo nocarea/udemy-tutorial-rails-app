@@ -7,33 +7,32 @@ class ArticlesController < ApplicationController
 
     def show
     end
-
-    def new
-        @article = Article.new
+    
+    def edit
     end
 
     def update
         if @article.update(article_params)
             flash.notice = "Updated successfully"
             redirect_to articles_path
-       else
-            flash.notice = "Something went wrong"
+        else
             render 'edit'
-       end
+        end
+    end
+    
+    def new
+        @article = Article.new
     end
 
     def create
         @article = Article.new(article_params)
         if @article.save
             flash.notice = "Created successfully!"
-            redirect_to articles_path 
+            redirect_to articles_path
         else
             flash.notice = "Something went wrong"
             render 'new'
         end
-    end
-
-    def edit
     end
 
     def destroy
