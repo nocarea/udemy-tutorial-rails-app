@@ -1,0 +1,62 @@
+.card {
+    opacity: 0.8;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 180px;
+    height: 240px;
+    background-color: rgb(10, 8, 8);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+    border: 2px solid rgba(255, 255, 255, 0.548) !important;
+    background-image: url(https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.1s ease;
+    &:hover {
+        opacity: 1;
+        border: 2px solid rgb(241, 243, 121) !important;
+        box-shadow: 0 0 10px rgba(243, 187, 104, 0.87);
+    }
+}
+.card-title {
+    padding-top: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: rgb(48, 47, 47);
+    &:hover {
+        color: rgb(0, 0, 0);
+    }
+}
+.card > .btn-danger {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid rgb(100, 100, 100);
+    transition: all 0.1s ease;
+    &:hover {
+        border: 1px solid rgb(255, 255, 255);
+    }
+}
+.card > .btn-warning {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid rgb(100, 100, 100);
+    transition: all 0.1s ease;
+    &:hover {
+        border: 1px solid rgb(255, 255, 255);
+    }
+}

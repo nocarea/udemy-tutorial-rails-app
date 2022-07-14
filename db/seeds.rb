@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-100.times do
-    Article.new(title: Faker::Dessert.variety, description: Faker::Dessert.topping).save
+25.times do
+    Article.new(title: Faker::Book.title, description: Faker::Lorem.sentence(word_count: 25)).save
 end
-puts "100 example Articles created"
+puts "25 example Articles created"

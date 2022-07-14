@@ -1,20 +1,17 @@
-h1 Articles Index
-= link_to "New Article", new_article_path, class: "btn btn-success"
-table
-    thead
-        tr
-            th Title
-            th Actions
-    tbody
-        - @articles.each do |article|
-            tr.article
-                td
-                    a.btn.btn-info.w-100 href=article_path(article)
-                        = article.title
-                td
-                    a.btn.btn-warning href=edit_article_path(article)
-                        | Edit
-                td
-                    a.btn.btn-danger href=article_path(article) data-method="delete"
-                        | Delete
-                        
+.banner.text-center
+    h1 ARTICLES
+    p List of all existing articles
+    a.btn.btn-warning#new-article href=new_article_path Create New Article
+
+.container.text-center
+    - @articles.each do |article|
+        .card
+            
+            a.card-title href=article_path(article)
+                    = article.title
+            a.btn.btn-warning href=edit_article_path(article)
+                | Edit
+            a.btn.btn-danger href=article_path(article) data-method="delete"
+                | Delete
+
+    . style="clear: both"
