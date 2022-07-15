@@ -1,10 +1,9 @@
-h1 Create new article
+.card-show
+    h2  New Article
+    
+    = render 'form'
+    .card-info
+        .btns
+            a.btn.btn-danger href=articles_path
+                | Cancel
 
-- if @article.errors.any?
-    h2 The following errors occured:
-    ul
-    - @article.errors.full_messages.each do |msg|
-        li = msg
-
-= render 'form'
-= link_to "Back to index", articles_path, class: "btn btn-info"

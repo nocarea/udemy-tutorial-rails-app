@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
 
     def update
         if @article.update(article_params)
-            flash.notice = "Updated successfully"
+            flash.notice = " "
             redirect_to articles_path
         else
             render 'edit'
@@ -27,10 +27,9 @@ class ArticlesController < ApplicationController
     def create
         @article = Article.new(article_params)
         if @article.save
-            flash.notice = "Created successfully!"
+            flash.notice = " "
             redirect_to articles_path
         else
-            flash.notice = "Something went wrong"
             render 'new'
         end
     end

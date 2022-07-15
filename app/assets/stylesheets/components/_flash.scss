@@ -1,0 +1,17 @@
+.alert {
+    height: 40px;
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    z-index: 4;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(137, 201, 119, 0.877);
+    border: 1px solid rgb(153, 153, 153);
+    //animation: fadeOut 4s;
+    //visibility: hidden; //to enable animation
+    //opacity: 0; //to enable animation
+}

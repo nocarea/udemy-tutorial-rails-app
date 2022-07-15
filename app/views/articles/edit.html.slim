@@ -1,2 +1,18 @@
-h1 edit article
-= render 'form'
+.card-show
+    h2 Edit Article
+
+    = render 'form'
+    .card-info
+        .btns
+            a.btn.btn-danger href=article_path(@article)
+                | Cancel
+
+        .timestamps
+            p#created
+                |created 
+                = time_ago_in_words(@article.created_at)
+                |  ago
+            p#updated
+                |updated 
+                = time_ago_in_words(@article.updated_at)
+                |  ago

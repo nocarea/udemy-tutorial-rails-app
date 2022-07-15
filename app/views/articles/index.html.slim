@@ -3,10 +3,9 @@
     p List of all existing articles
     a.btn.btn-warning#new-article href=new_article_path Create New Article
 
-.container.text-center
+.container.card-container.text-center.flex-wrap
     - @articles.each do |article|
         .card
-            
             a.card-title href=article_path(article)
                     = article.title
             a.btn.btn-warning href=edit_article_path(article)
@@ -14,4 +13,4 @@
             a.btn.btn-danger href=article_path(article) data-method="delete"
                 | Delete
 
-    . style="clear: both"
+    //. style="clear: both"

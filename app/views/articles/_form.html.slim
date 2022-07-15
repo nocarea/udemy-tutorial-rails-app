@@ -1,11 +1,9 @@
-= form_for @article do |f|
-    p
-        = f.label "Title"
-        = f.text_field :title
-    p
-        = f.label "Description"
-        = f.text_field :description
+= simple_form_for @article do |f|
 
-    = f.submit
+    p
+        = f.input :title, label: "Title: "
 
-    
+    p
+        = f.input :description, label: "Description: ", size: 255
+
+    = f.button :submit, label: "Submit", class: "btn btn-warning"

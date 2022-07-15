@@ -1,7 +1,23 @@
-h1
-    = @article.title
-h2 
-    = @article.description
+.card-show
+    h2
+        = @article.title
+    h4.pt-3
+        = @article.description
+    .card-info
+        .btns
+            a.btn.btn-info href=articles_path
+                | Back
+            a.btn.btn-warning href=edit_article_path(@article)
+                | Edit
+            a.btn.btn-danger href=article_path(@article) data-method="delete"
+                | Delete
 
-=> link_to "Edit", edit_article_path
-= link_to "Back to index", articles_path
+        .timestamps
+            p#created
+                |created 
+                = time_ago_in_words(@article.created_at)
+                |  ago
+            p#updated
+                |updated 
+                = time_ago_in_words(@article.updated_at)
+                |  ago

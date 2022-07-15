@@ -1,0 +1,16 @@
+@keyframes card_glow {
+	0% {box-shadow: 0 0 4px rgb(219, 255, 87); border: 2px solid rgba(255, 255, 169, 0.85); background-color: rgb(225, 225, 225);}
+    50% {box-shadow: 0 0 4px rgba(255, 255, 255, 0.6); border: 2px solid rgba(255, 255, 169, 0.4); background-color: rgb(220, 220, 220)}
+	100% {box-shadow: 0 0 4px rgb(219, 255, 87); border: 2px solid rgba(255, 255, 169, 0.85); background-color: rgb(225, 225, 225);}
+}
+@keyframes form_glow {
+    0% {border: 1px solid rgb(255, 254, 168);}
+	50% {border: 1px solid rgba(255, 253, 145, 0.2);}
+    100% {border: 1px solid rgb(255, 254, 168);}
+}
+@keyframes fadeOut {
+	0% { visibility: visible; opacity: 1;}
+	60% { visibility: visible; opacity: 1;}
+    99% { visibility: visible; opacity: 0;}
+    100% { visibility: hidden;}
+}
