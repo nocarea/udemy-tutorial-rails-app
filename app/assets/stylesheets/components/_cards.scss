@@ -18,6 +18,8 @@
         opacity: 1;
         border: 2px solid rgb(241, 243, 121) !important;
         box-shadow: 0 0 10px rgba(243, 187, 104, 0.87);
+        animation: card_glow 1s;
+        animation-iteration-count: infinite;
     }
 }
 .card-title {

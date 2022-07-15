@@ -6,7 +6,7 @@
 .container.card-container.text-center.flex-wrap
     - @articles.each do |article|
         .card
-            a.card-title href=article_path(article)
+            a.card-title.px-4 href=article_path(article)
                     = article.title
             a.btn.btn-warning href=edit_article_path(article)
                 | Edit

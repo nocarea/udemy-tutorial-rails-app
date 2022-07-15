@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import "bootstrap";
 @import "components/navbar";
 @import "components/footer";
@@ -23,21 +24,17 @@
 @import "components/animations";
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     background-color: rgb(44, 44, 44);
+    color: white;
 }
 h1 {
     padding-top: 40px;
-    color:white;
 }
 a {
-    color:rgb(231, 180, 180);
     text-decoration: none;
-}
-p {
-    color: white;
 }
 .container {
     width: 66%;

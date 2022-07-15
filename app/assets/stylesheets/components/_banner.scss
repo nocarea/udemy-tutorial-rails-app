@@ -1,6 +1,6 @@
 .banner {
     height: 300px;
-    margin-top: 20px;
+    margin-top: 35px;
     background-image: linear-gradient(to bottom, rgba(245, 245, 252, 0.253), rgba(117, 19, 93, 0.73)),
     url('mountain.jpg');
     background-size: auto;
@@ -14,11 +14,12 @@
     color: rgb(251, 255, 195);
     border: 2px solid rgba(255, 255, 255, 0.815);
     background-color: rgba(185, 185, 185, 0.384) !important;
-    transition: font-size 0.1s ease;
+    transition: all 0.3s ease;
     &:hover {
-        color: rgb(253, 255, 219);
-        font-size: 16px !important;
-        box-shadow: 0 0 3px white;
-        background-color: rgba(211, 209, 209, 0.384) !important;
+        color: rgb(255, 255, 255);
+        //background-color: rgba(211, 209, 209, 0.384) !important;
+        box-shadow: 0 0 8px rgb(219, 255, 87);
+        border: 2px solid rgba(255, 255, 169, 0.85);
+        background-color: rgb(225, 225, 225);
     }
 }

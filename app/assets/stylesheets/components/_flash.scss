@@ -1,17 +1,19 @@
 .alert {
     height: 40px;
-    width: 300px;
+    width: 240px;
     position: fixed;
+    padding-bottom: 2px;
+    padding-top: 6px;
     bottom: 0;
-    margin-left: 8px;
-    margin-bottom: 8px;
+    margin-left: 10px;
+    margin-bottom: 9px;
     z-index: 4;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 4px;
     text-align: center;
     background-color: rgba(137, 201, 119, 0.877);
     border: 1px solid rgb(153, 153, 153);
-    //animation: fadeOut 4s;
-    //visibility: hidden; //to enable animation
-    //opacity: 0; //to enable animation
+    animation: fadeOut 4s;
+    visibility: hidden; //to enable animation
+    opacity: 0; //to enable animation
 }
