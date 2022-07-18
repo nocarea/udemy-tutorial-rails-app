@@ -1,9 +1,9 @@
-.banner.text-center
+.banner
     h1 Your Profile
     p  
     a.btn.btn-warning#new-article href=new_article_path Create New Article
 
-.container.card-container.text-center.flex-wrap
+.container.card-container.flex-wrap
     - current_user.articles.each do |article|
         .card
             a.card-title.px-4 href=article_path(article)

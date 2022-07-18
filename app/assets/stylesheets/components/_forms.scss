@@ -8,6 +8,9 @@
     border: 2px solid rgba(255, 255, 169, 0.85);
     padding: 40px;
     border-radius: 5px;
+    & > h1 {
+        padding: 15px;
+    }
 }
 .form-group {
     margin-bottom: 30px;

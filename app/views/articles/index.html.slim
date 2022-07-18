@@ -3,7 +3,7 @@
     p List of all existing articles
     a.btn.btn-warning#new-article href=new_article_path Create New Article
 
-.container.text-center.flex-wrap
+.container.flex-wrap
     - @articles.each do |article|
         .card
             a.card-title.px-4 href=article_path(article)

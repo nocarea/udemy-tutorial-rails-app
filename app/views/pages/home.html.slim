@@ -1,2 +1,13 @@
-.banner.text-center.mt-5
+.banner.mt-5
     h1 Hello World!
+
+#welcome.text-center
+    - if !current_user
+            p why aren't you signed up yet ye cunt
+            h1.pb-5 DO IT!
+            a.nav-link.btn.btn-secondary.mb-5.p-4 href=new_user_session_path  Sign In
+            a.nav-link.btn.btn-success.mt-5.p-4 href=new_user_registration_path  Sign Up
+    - else
+            h1 WHY WOULD YOU VISIT THIS PAGE AFTER LOGGING IN
+            h1 fuck off and do something useful
+            a.btn.btn-lg.btn-danger.mt-5 href=articles_path Article Index
