@@ -15,8 +15,8 @@ nav.navbar.navbar-expand-lg
         a#navbarDropdownMenuLink.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-bs-toggle="dropdown" href="#" 
           | User
         .dropdown-menu aria-labelledby="navbarDropdownMenuLink" 
-          a.dropdown-item href="#"  Profile
-          a.dropdown-item href="#"  Preferences
+          a.dropdown-item href=profile_path  Profile
+          a.dropdown-item href=edit_user_registration_path  Preferences
           a.dropdown-item href=destroy_user_session_path data-method="delete"  Sign Out
     - else
         li.nav-item#sign-in

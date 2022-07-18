@@ -17,10 +17,19 @@
         color:rgb(162, 221, 223);
     }
 }
+.navbar-brand {
+    margin-left: 15px;
+    margin-right: 80px;
+    color: white;
+    transition: all 0.2s ease;
+    &:hover {
+        color:rgb(162, 221, 223) !important;
+    }
+}
 #navbarDropdownMenuLink {
     position: absolute;
     top:12px;
-    right: 10px;
+    right: 20px;
 }
 .dropdown-menu {
     width: 90px;

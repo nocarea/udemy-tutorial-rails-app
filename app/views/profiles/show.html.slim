@@ -1,14 +1,14 @@
 .banner.text-center
-    h1 Articles
-    p List of all existing articles
+    h1 Your Profile
+    p  
     a.btn.btn-warning#new-article href=new_article_path Create New Article
 
-.container.text-center.flex-wrap
-    - @articles.each do |article|
+.container.card-container.text-center.flex-wrap
+    - current_user.articles.each do |article|
         .card
             a.card-title.px-4 href=article_path(article)
                     = article.title
-            a.btn.btn-secondary href=edit_article_path(article)
+            a.btn.btn-warning href=edit_article_path(article)
                 | Edit
             a.btn.btn-danger href=article_path(article) data-method="delete"
                 | Delete

@@ -36,6 +36,7 @@
     }
 }
 .card > .btn-danger {
+    background-color: rgba(250, 18, 68, 0.76);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -43,20 +44,23 @@
     z-index: 2;
     border: 1px solid rgb(100, 100, 100);
     transition: all 0.1s ease;
+    border: 1px solid rgba(255, 255, 255, 0.397);
     &:hover {
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.801);
     }
 }
-.card > .btn-warning {
+.card > .btn-secondary {
+    background-color: rgba(253, 242, 91, 0.747);
+    color: rgba(0, 0, 0, 0.767);
     position: absolute;
     bottom: 40px;
     left: 0;
     width: 100%;
     z-index: 2;
-    border: 1px solid rgb(100, 100, 100);
+    border: 1px solid rgb(192, 192, 192);
     transition: all 0.1s ease;
     &:hover {
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.562);
     }
 }
 .card-show {
