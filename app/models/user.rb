@@ -3,5 +3,13 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-         has_many :articles
+  has_many :articles
+  validates :username,  presence: true,
+                      uniqueness: { case_sesitive: false },
+                          length: { minimum: 3, maximum: 25 }
+  VALID_EMAIL_REGEX = URI::MailTo::EMAIL_REGEXP
+  validates :email,     presence: true,
+                      uniqueness: { case_sesitive: false },
+                          length: { minimum: 3, maximum: 105 },
+                          format: { with: VALID_EMAIL_REGEX }
 end
