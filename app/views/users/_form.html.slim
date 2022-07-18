@@ -1,0 +1,12 @@
+= simple_form_for @user do |f|
+
+    p
+        = f.input :username, label: "Username: "
+
+    p
+        = f.input :email, label: "Email: ", size: 255
+
+    p
+        = f.input :password, label: "Password"
+
+    = f.button :submit, label: "Sign up", class: "btn btn-warning"
