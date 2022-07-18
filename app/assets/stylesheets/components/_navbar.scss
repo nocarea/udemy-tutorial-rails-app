@@ -1,4 +1,4 @@
-.navigation {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -6,10 +6,10 @@
     color: white;
     background-color: rgb(0, 0, 0) !important;
     z-index: 3;
+    list-style-type: none;
 }
-.navitem {
+.nav-link {
     color: white;
-    font-size: 26px;
     padding-left: 10px;
     padding-right: 10px;
     transition: all 0.2s ease;
@@ -17,9 +17,25 @@
         color:rgb(162, 221, 223);
     }
 }
-#home-page {
-    padding-left: 10px;
-    padding-right: 100px;
-    font-size: 32px;
+#navbarDropdownMenuLink {
+    position: absolute;
+    top:12px;
+    right: 10px;
+}
+.dropdown-menu {
+    width: 90px;
+    position: absolute;
+    right: 0;
+    left: auto !important;
+}
+#sign-in {
+    font-size: 14px;
+    position:absolute;
+    right: 100px;
+}
+#sign-up {
+    font-size: 14px;
+    position:absolute;
+    right: 20px;
 }
 
