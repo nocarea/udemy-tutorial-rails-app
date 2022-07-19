@@ -3,6 +3,10 @@
     p List of all existing articles
     a.btn.btn-warning#new-article href=new_article_path Create New Article
 
+
+.pagination-container#top
+    = will_paginate @articles
+
 .container.flex-wrap
     - @articles.each do |article|
         .card
@@ -13,4 +17,6 @@
             a.btn.btn-danger href=article_path(article) data-method="delete"
                 | Delete
 
+.pagination-container#bottom
+    = will_paginate @articles
     //. style="clear: both"

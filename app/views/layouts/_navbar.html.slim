@@ -5,11 +5,11 @@ nav.navbar.navbar-expand-lg
   #navbarNavDropdown.collapse.navbar-collapse
     ul.navbar-nav
       li.nav-item.active
-        a.nav-link href="/" 
-          | Home
+        a.nav-link href=articles_path
+          | Articles
           span.sr-only (current)
       li.nav-item
-        a.nav-link href=articles_path  Articles
+        a.nav-link href=profiles_path  User Profiles
     - if current_user
       li.nav-item
         a#navbarDropdownMenuLink.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-bs-toggle="dropdown" href="#" 

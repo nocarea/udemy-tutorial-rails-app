@@ -1,3 +1,5 @@
+//Article-Card-Attributes
+
 .card {
     flex: 0 0 17%;
     position: relative;
@@ -50,7 +52,7 @@
     }
 }
 .card > .btn-secondary {
-    background-color: rgba(253, 242, 91, 0.747);
+    background-color: rgba(253, 242, 91, 0.808);
     color: rgba(0, 0, 0, 0.767);
     position: absolute;
     bottom: 40px;
@@ -95,4 +97,50 @@
         padding-top: 8px;
     }
 }
+// User-Card-Attributes
 
+.user-card {
+    flex: 0 0 49%;
+    position: relative;
+    opacity: 0.8;
+    margin-top: 18px;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 160px;
+    background-color: rgb(225, 225, 225);
+    border: 2px solid rgba(255, 255, 255, 0.548) !important;
+    border-radius: 5px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.1s ease;
+    &:hover {
+        cursor: default;
+        opacity: 1;
+        border: 2px solid rgb(241, 243, 121) !important;
+        box-shadow: 0 0 10px rgba(243, 187, 104, 0.87);
+        animation: card_glow 1s;
+        animation-iteration-count: infinite;
+    }
+}
+.user-card-title {
+    text-align: right;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: 1;
+    color: rgb(48, 47, 47);
+    &:hover {
+        color: rgb(0, 0, 0);
+    }
+}
+.user-card-body {
+    margin-top: 25px;
+    color: black;
+}
+#profile-pic {
+    position: absolute;
+    left: 35px;
+    height: 80px;
+    border-radius: 50%;
+}

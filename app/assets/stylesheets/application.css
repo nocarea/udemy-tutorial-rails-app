@@ -22,7 +22,7 @@
 @import "components/flash";
 @import "components/forms";
 @import "components/animations";
-
+@import "components/pagination";
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +40,7 @@ a {
     color: white;
     width: 66%;
     margin-top: 10px;
-    margin-bottom: 150px !important;
+    margin-bottom: 100px !important;
     display: flex; 
     justify-content: space-between;
     text-align: center;

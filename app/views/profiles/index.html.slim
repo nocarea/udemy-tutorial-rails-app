@@ -1,0 +1,20 @@
+.banner.text-center
+    h1 User Profiles
+    p Browse existing Users
+
+.pagination-container#top
+    = will_paginate @users
+
+.container.flex-wrap
+    - @users.each do |user|
+        .user-card
+            h5.user-card-title.px-4 = user.username
+            .user-card-body
+                img#profile-pic.my-1 src="https://source.unsplash.com/random/200x200/?face"
+                p Email: #{user.email}
+                p = pluralize(user.articles.length, 'Article')
+                p Joined #{time_ago_in_words(user.created_at)} ago
+
+.pagination-container#bottom
+    = will_paginate @users
+    //. style="clear: both"
