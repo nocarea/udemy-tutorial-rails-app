@@ -28,14 +28,31 @@
 }
 #navbarDropdownMenuLink {
     position: absolute;
-    top:12px;
-    right: 20px;
-}
-.dropdown-menu {
-    width: 90px;
-    position: absolute;
+    top: 0;
     right: 0;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    height: 50px;
+    padding-top: 12px;
+    padding-right: 60px;
+    text-align: right;
+    position: absolute;
+}
+.dropdown-menu { 
+    background-color: rgba(58, 58, 58, 0.699);
+    width: 190px;
+    position: absolute;
+    right: 3px;
     left: auto !important;
+    & .dropdown-item {
+        color: white;
+        transition: all 0.2s ease;
+        &:hover {
+            color:rgb(162, 221, 223) !important;
+            background-color: rgba(255, 255, 255, 0);
+        }
+    }
 }
 #sign-in {
     font-size: 14px;
@@ -47,4 +64,12 @@
     position:absolute;
     right: 20px;
 }
+#nav-user-img {
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
 

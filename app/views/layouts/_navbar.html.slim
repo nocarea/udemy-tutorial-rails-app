@@ -11,13 +11,14 @@ nav.navbar.navbar-expand-lg
       li.nav-item
         a.nav-link href=profiles_path  User Profiles
     - if current_user
-      li.nav-item
+      li.nav-item#profiledropdown
         a#navbarDropdownMenuLink.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-bs-toggle="dropdown" href="#" 
-          | User
+          = current_user.username
         .dropdown-menu aria-labelledby="navbarDropdownMenuLink" 
           a.dropdown-item href=profile_path  Profile
           a.dropdown-item href=edit_user_registration_path  Preferences
           a.dropdown-item href=destroy_user_session_path data-method="delete"  Log out
+      img#nav-user-img src="https://source.unsplash.com/random/200x200/?face"
     - else
         li.nav-item#sign-in
             a.nav-link.btn.btn-secondary href=new_user_session_path  Sign In

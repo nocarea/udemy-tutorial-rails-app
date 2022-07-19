@@ -7,10 +7,13 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
+    & h1 {
+        font-size: 52px;
+    }
 }
 #new-article {
-    padding: 24px !important;
-    margin-top: 50px;
+    padding: 16px !important;
+    margin-top: 35px;
     border-radius: 5px;
     color: rgb(251, 255, 195);
     border: 2px solid rgba(255, 255, 255, 0.815);
