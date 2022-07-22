@@ -1,0 +1,12 @@
+.banner.text-center
+    h1 Category Index
+    p All currently existing Categories
+    a.btn.btn-warning#new-article href=new_category_path Create New Category
+
+
+.container.flex-wrap
+    - @categories.each do |category|
+        .card
+            a.card-title.px-4 href=category_path(category)
+                    = category.name
+

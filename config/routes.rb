@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'profiles', to: 'profiles#index'
   resource :profile, only: [:show]
   resources :articles
+  resources :categories, except: [:destroy]
 end

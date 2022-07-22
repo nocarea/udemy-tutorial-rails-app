@@ -1,0 +1,18 @@
+.card-show
+    h2
+        = @category.name
+
+    .card-info
+        .btns
+            a.btn.btn-info href=categories_path
+                | Back
+
+        .timestamps
+            p#created
+                |created 
+                = time_ago_in_words(@category.created_at)
+                |  ago
+            p#updated
+                |updated 
+                = time_ago_in_words(@category.updated_at)
+                |  ago
